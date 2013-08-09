@@ -1,4 +1,3 @@
-
   <fieldset>
     <legend>New Pony</legend>
     <form id="new_pony" class="inline">

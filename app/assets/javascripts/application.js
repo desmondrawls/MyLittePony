@@ -23,3 +23,9 @@
 //= require_tree .
 
 
+Mlp.vent = _.extend({}, Backbone.Events);
+
+
+
+
+

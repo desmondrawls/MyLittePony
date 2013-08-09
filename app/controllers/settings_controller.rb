@@ -14,8 +14,7 @@ def show
 end
 
 def create
-  @setting = Setting.create(params[:setting])
-  respond_with @setting
+  respond_with Setting.create(params[:setting])
 end
 
 def update

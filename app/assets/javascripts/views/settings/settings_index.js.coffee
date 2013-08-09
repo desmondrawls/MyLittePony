@@ -8,12 +8,17 @@ class Mlp.Views.SettingsIndex extends Backbone.View
 
   initialize: ->
     @collection.randomSetting()
+    Mlp.vent.on('click', @rideIn, this)
     @collection.on('reset', @render, this)
     @collection.on('add', @appendSetting, this)
     @collection.on('change', @render, this)
 
-  createSetting: (event) ->
+  rideIn: (model) ->
     event.preventDefault()
+    console.log(model)
+
+  createSetting: (event) ->
+    event.preventDefault() 
 
     attributes = 
       name: $('#new_setting_name').val()

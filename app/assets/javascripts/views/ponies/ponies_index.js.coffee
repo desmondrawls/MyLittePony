@@ -12,6 +12,11 @@ class Mlp.Views.PoniesIndex extends Backbone.View
     @collection.on('add', @appendPony, this)
     @collection.on('change', @render, this)
 
+  ponyUp: (event) ->
+    event.preventDefault()
+    @collection.ponyDown()
+    @collection.ponyUp()
+
   render: ->
     $(@el).html(@poniesTemplate())
     @collection.each(@appendPony)
@@ -21,10 +26,6 @@ class Mlp.Views.PoniesIndex extends Backbone.View
     view = new Mlp.Views.Pony(model: pony)
     @$('#ponies').append(view.render().el)
 
-  ponyUp: (event) ->
-    event.preventDefault()
-    @collection.ponyDown()
-    @collection.ponyUp()
 
   createPony: (event) ->
     event.preventDefault()

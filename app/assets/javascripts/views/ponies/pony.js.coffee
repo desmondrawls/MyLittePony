@@ -11,6 +11,7 @@ class Mlp.Views.Pony extends Backbone.View
     @model.on('select', @selectPony, this)
 
   showPony: ->
+    Mlp.vent.trigger('click', @model)
     Backbone.history.navigate("ponies/#{@model.get('id')}", true)
 
   selectPony: ->
