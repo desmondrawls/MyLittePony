@@ -1,13 +1,13 @@
   <button id="change_of_venue">Change Venue!</button>
 
   <fieldset>
-    <legend>Change Setting</legend>
+    <legend>Add A Setting</legend>
     <form id="new_setting" class="inline">
       <label>Setting name:</label>
       <input type="text" name="name" id="new_setting_name">
       <label>Image url:</label>
       <input type="text" name="img_url" id="new_setting_img_url">
-      <input type="submit" value="Change">
+      <input type="submit" value="Add">
     </form>
   </fieldset>
   

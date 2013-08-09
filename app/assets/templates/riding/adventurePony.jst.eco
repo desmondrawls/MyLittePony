@@ -1,0 +1,11 @@
+<p>
+  <%= @pony.get('name') %>
+</p>
+</p>
+  <img src="<%= @pony.get('img_url') %>" alt="shutterfly" height="200" width="200">
+</p>
+<p>
+  <% if @pony.get('selected'): %>
+    <span class="selected">SELECTED</span>
+  <% end %>
+</p>

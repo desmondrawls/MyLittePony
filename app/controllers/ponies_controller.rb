@@ -14,8 +14,7 @@ def show
 end
 
 def create
-  @pony = Pony.create(params[:pony])
-	respond_with @pony
+  respond_with Pony.create(params[:pony])
 end
 
 def update
