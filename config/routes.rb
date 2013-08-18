@@ -3,7 +3,10 @@ Mlp::Application.routes.draw do
     resources :ponies
     resources :settings
     resources :clothing_items
+    resources :messages
   end
+
+  post '/receive' => 'messages#create'
 
   root to: "main#index"
   match '*path', to: 'main#index'

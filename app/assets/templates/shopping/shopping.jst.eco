@@ -1,12 +1,11 @@
 <hr>
-<div class="column span-6 shelf" id="shoes-index">
-<div class="clothing-sign" id="shoes-sign">SHOES</div>
-</div>
+  <div class="column span-6 shelf" id="shoes-index">
+    <div class="clothing-sign" id="shoes-sign">SHOES</div>
+  </div>
 
-<div class="column span-12 fitting-room-inner" id="shopping_pony">
-</div>
+  <div class="column span-12 fitting-room-inner" id="shopping_pony"></div>
 
-<div class="column span-6 shelf" id="hats-index">
-<div class="clothing-sign" id="hats-sign">HATS</div>
-</div>
+  <div class="column span-6 shelf" id="hats-index">
+    <div class="clothing-sign" id="hats-sign">HATS</div>
+  </div>
 </hr>

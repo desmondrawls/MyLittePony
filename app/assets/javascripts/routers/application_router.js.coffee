@@ -4,6 +4,7 @@ class Mlp.Routers.Application extends Backbone.Router
     'ponies/:id': 'show'
 
   initialize: ->
+    Mlp.vent.on('cameo:rendered', @openChat, this)
     Mlp.vent.on('pony:click', @choices, this)
     Mlp.vent.on('choice:shopping', @shopping, this)
     Mlp.vent.on('choice:exploring', @exploring, this)
@@ -13,6 +14,8 @@ class Mlp.Routers.Application extends Backbone.Router
     @settings.reset($('#container').data('settings'))
     @clothing_items = new Mlp.Collections.ClothingItems
     @clothing_items.reset($('#container').data('clothing_items'))
+    @messages = new Mlp.Collections.Messages()
+    @messages.reset($('#container').data('messages'))
 
 
   index: ->
@@ -62,6 +65,10 @@ class Mlp.Routers.Application extends Backbone.Router
     cameo_reservation_view = new Mlp.Views.CameoReservation(collection: @ponies)
     $('#cameo').html(cameo_reservation_view.render().el)
 
+  openChat: ->
+    @messages.fetch success: =>
+      chatview = new Mlp.Views.Chat(collection: @messages)
+      $('#chat').html(chatview.render().el)
 
 
 

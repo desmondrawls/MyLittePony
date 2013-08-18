@@ -6,3 +6,4 @@
   <button class='navigate' id="west">west</button>
 </div>
 <div id="everfree-scene"></div>
+<div id="chat"></div>

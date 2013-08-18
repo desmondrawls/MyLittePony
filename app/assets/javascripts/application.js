@@ -15,7 +15,6 @@
 //= require underscore
 //= require backbone
 //= require mlp
-//= require backbone.subset
 //= require_tree ../templates
 //= require_tree ./models
 //= require_tree ./collections
@@ -23,14 +22,17 @@
 //= require_tree ./routers
 //= require collections/ponies
 //= require collections/settings
+//= require collections/messages
 //= require models/pony
 //= require models/setting
+//= require models/message
 //= require routers/application_router
 //= require views/exploring/cameo
 //= require views/exploring/cameo_reservation
 //= require views/exploring/everfree
 //= require views/exploring/everfree_scene
 //= require views/exploring/heroine
+//= require views/exploring/chat
 //= require views/ponies/ponies_index
 //= require views/ponies/pony
 //= require views/action
@@ -39,6 +41,15 @@
 
 
 Mlp.vent = _.extend({}, Backbone.Events);
+
+$(function() {
+  var faye = new Faye.Client("http://localhost:9292/faye");
+  faye.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
+  faye.subscribe('/receive', function (data) {
+    console.log(data);
+    $('#messages').append("<p>" + data.content + "</p>");
+  });
+});
 
 
 

@@ -1,0 +1,11 @@
+  <fieldset>
+    <legend>Chat</legend>
+    <div id="messages"></div>
+    <form action="/messages" method="post" data-remote="true" id="new_message" class="inline">
+      <label>Say Something:</label>
+      <input type="text" name="content" id="new-message-content">
+      <div class="wpb_wrapper">
+        <input type="submit" class="mpcth-sc-button mpcth-sc-button-size-normal" value="Say it">
+      </div>
+    </form>
+  </fieldset>

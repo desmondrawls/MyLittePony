@@ -69,3 +69,17 @@
   height: 30px;
   list-style-type: none;
 }
+
+#messages {
+  height: 200px;
+  width: 400px;
+  border-style: solid;
+  border-width: 5px;
+  overflow:scroll;
+}
+
+#new-message-content {
+  width: 300px;
+  border-style: solid;
+  border-width: 3px;
+}

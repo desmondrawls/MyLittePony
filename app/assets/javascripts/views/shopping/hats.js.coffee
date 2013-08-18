@@ -27,7 +27,7 @@ class Mlp.Views.Hats extends Backbone.View
   positionHats: ->
     for hat in @hats
       top = ((hat.get('id'))*67)-40
-      left = 70
+      left = 72
       $("#hats-#{hat.get('id')}").css("top", "#{top}px")
       $("#hats-#{hat.get('id')}").css("left", "#{left}%")
     this

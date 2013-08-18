@@ -9,6 +9,7 @@ class Mlp.Views.Cameo extends Backbone.View
       console.log(this.model)
       console.log($(@el))
       $(@el).html(@template(cameo: this.model))
+      Mlp.vent.trigger('cameo:rendered')
       this
 
     close: ->

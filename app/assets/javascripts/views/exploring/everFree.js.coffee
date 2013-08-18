@@ -34,6 +34,7 @@ class Mlp.Views.Everfree extends Backbone.View
     view = new Mlp.Views.EverfreeScene(model: setting)
     @$('#everfree-scene').append(view.render().el)
 
+
   render: ->
     console.log("rendering everfree")
     console.log(@collection)

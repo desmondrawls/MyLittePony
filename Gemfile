@@ -23,6 +23,11 @@ end
 
 gem 'jquery-rails'
 gem 'backbone-on-rails'
+gem 'faye'
+gem 'thin'
+gem 'figaro'
+gem 'localtunnel'
+gem 'twilio-rb'
 
 group :development do
   gem "better_errors"
@@ -33,6 +38,9 @@ end
 group :production do
   gem 'pg'  
 end
+
+#####FAYE#####
+gem 'nifty-generators'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
