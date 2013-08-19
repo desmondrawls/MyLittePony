@@ -1,6 +1,7 @@
 class Mlp.Views.Shopping extends Backbone.View
   template: JST['shopping/shopping']
-  className: 'fitting-room container'
+  className: 'container'
+  id: 'fitting-room'
 
   events:
     'click .clothing-list-item': 'clickedClothing'

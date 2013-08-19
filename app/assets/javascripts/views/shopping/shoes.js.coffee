@@ -31,7 +31,7 @@ class Mlp.Views.Shoes extends Backbone.View
     for shoe, i in @shoes
       console.log(shoe)
       top = (i*80)+57
-      left = 27.5
+      left = -1.5
       $("#shoes-#{shoe.get('id')}").css("top", "#{top}px")
       $("#shoes-#{shoe.get('id')}").css("left", "#{left}%")
     this

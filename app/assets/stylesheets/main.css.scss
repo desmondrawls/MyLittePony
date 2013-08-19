@@ -20,8 +20,9 @@
   margin-right: 0px !important;
 }
 
-.fitting-room {
+#fitting-room {
   height: 500px;
+  position: relative;
 }
 
 .fitting-room-inner {
@@ -41,8 +42,8 @@
 .fitting-room-scene img,
 {
   position: absolute;
-  left: 36%;
-  top: 200px;
+  left: 21%;
+  top: 150px;
   width: 400px;
 }
 
