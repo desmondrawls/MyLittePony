@@ -2,7 +2,7 @@ class Mlp.Views.Chat extends Backbone.View
   template: JST['exploring/chat']
 
   initialize: ->
-    Mlp.vent.on('everfree:navigated', @clearChat, this)
+    Mlp.vent.on('everfree:chat', @clearChat, this)
     @collection.on('reset', @render, this)
     @collection.on('add', @appendMessage, this)
     @collection.on('change', @render, this)
@@ -49,10 +49,11 @@ class Mlp.Views.Chat extends Backbone.View
       for attribute, messages of errors
         alert "#{attribute} #{message}" for message in messages
 
-  clearChat: =>
+  clearChat: (new_scene) =>
     console.log("Clear the chat...")
     console.log(@chat)
     @finished_chat = @collection.filter (x) -> x.get('heroine') == $('#heroine-name').html()
-    for message in @finished_chat
-      message.trash()
-
+    while @finished_chat.length > 0
+      @finished_chat[0].trash()
+      @finished_chat = @collection.filter (x) -> x.get('heroine') == $('#heroine-name').html()
+    Mlp.vent.trigger('everfree:navigated', new_scene)

@@ -6,4 +6,5 @@ class Mlp.Models.Message extends Backbone.Model
     @save()
 
   trash: ->
+    debugger
     @destroy()

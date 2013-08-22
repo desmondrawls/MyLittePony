@@ -2,7 +2,6 @@ class Texter
   @@family = ["ME"]
   def self.send_with_twilio(speaker, content)
     body = speaker + ": " + content
-    debugger
     @@family.each do |family_member|
       Twilio::SMS.create :to => ENV[family_member], 
       :from => ENV["TWILIO_NUMBER"],
