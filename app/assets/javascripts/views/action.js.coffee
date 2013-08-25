@@ -1,6 +1,9 @@
 class Mlp.Views.Action extends Backbone.View
     template: JST['action']
 
+    events: ->
+      'click #escape': 'triggerEscape'
+
     initialize: ->
       Mlp.vent.on('everfree:rendered', @positionHeroine, this)
       Mlp.vent.on('everfree:rendered', @positionCameo, this)
@@ -36,3 +39,6 @@ class Mlp.Views.Action extends Backbone.View
         $('#cameo').addClass('flipped-image')
       if not everfree_scene.get('cameo_reversed')
         $('#cameo').removeClass('flipped-image')
+    
+    triggerEscape: ->
+      Mlp.vent.trigger('action:escape')
