@@ -1,6 +1,5 @@
   <div class="column span-24 theater" id="everfree">
     <h1>Exploring</h1>
-    <button id='escape'>Escape from Everfree!</button>
 
     <div class="column span-24" id="background"></div>
 
