@@ -1,5 +1,25 @@
 <h3>Everfree</h3>
 <div id="nav-buttons">
+  <div class="mpcth-sc-share-count mpcth-waypoint-trigger" data-id="627" data-ajaxurl="http://www.mpcreation.pl/themeforest/smartchoice/wp-admin/admin-ajax.php">
+    <div class="mpcth-sc-share-count-facebook mpcth-sc-share-count-wrap">
+      <span class="mpcth-sc-share-count-icon mpcth-sc-icon-facebook">
+      </span>
+      <span class="mpcth-sc-share-count-number">0
+      </span>
+    </div>
+    <div class="mpcth-sc-share-count-twitter mpcth-sc-share-count-wrap">
+      <span class="mpcth-sc-share-count-icon mpcth-sc-icon-twitter">
+      </span>
+      <span class="mpcth-sc-share-count-number">0
+      </span>
+    </div>
+    <div class="mpcth-sc-share-count-googleplus mpcth-sc-share-count-wrap">
+      <span class="mpcth-sc-share-count-icon mpcth-sc-icon-gplus">
+      </span>
+      <span class="mpcth-sc-share-count-number">0
+      </span>
+    </div>
+  </div>
   <button class='navigate' id="north">north</button>
   <button class='navigate' id="south">south</button>
   <button class='navigate' id="east">east</button>
