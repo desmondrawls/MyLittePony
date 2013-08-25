@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130820145143) do
+ActiveRecord::Schema.define(:version => 20130825214344) do
 
   create_table "clothing_items", :force => true do |t|
     t.string   "dept"
@@ -64,6 +64,7 @@ ActiveRecord::Schema.define(:version => 20130820145143) do
     t.string   "cameo_position_left"
     t.string   "cameo_position_top"
     t.string   "cameo_width"
+    t.boolean  "escape"
   end
 
 end

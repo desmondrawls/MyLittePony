@@ -4,7 +4,7 @@
   <button class='navigate' id="south">south</button>
   <button class='navigate' id="east">east</button>
   <button class='navigate' id="west">west</button>
-  <button class='navigate' id="escape">ESCAPE FROM EVERFREE</button>
+  <button id="escape">ESCAPE FROM EVERFREE</button>
 </div>
 <div id="everfree-scene"></div>
 <div id="chat"></div>

@@ -5,6 +5,7 @@ class Mlp.Views.Everfree extends Backbone.View
 
   events:
     'click .navigate': 'navigate'
+    'click #escape': 'triggerEscape'
 
   initialize: ->
     console.log("initializing everfree")
@@ -46,3 +47,7 @@ class Mlp.Views.Everfree extends Backbone.View
     @appendEverfreeScene(@collection.selected())
     Mlp.vent.trigger('everfree:rendered', @collection.selected())
     this
+
+
+  triggerEscape: ->
+    Mlp.vent.trigger('action:escape')
