@@ -1,7 +1,7 @@
+ <h2>Exploring Everfree</h2>
+ <h3>Can you find your way out?</h3>
   <div class="column span-24 theater" id="everfree">
-    <h2>Exploring</h2>
-    <h3>Everfree</h3>
-    <h4>Can You Find Your Way Out?</h4>
+    
 
     <div class="column span-24" id="background"></div>
 
