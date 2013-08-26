@@ -108,52 +108,13 @@
   vertical-align: bottom;
 }
 
-.theater {
-  position: relative;
-}
-
 .clothing-list-item,
 .pony_list_item,
 button {
 cursor: pointer;
 }
 
-.pony_list_item {
-  list-style-type: none;
+#background {
+  position: relative;
 }
 
-
-#heroine img {
-  position: absolute;
-  z-index: 2;
-  left: 50%;
-  top: 295px;
-  width: 120px;
-}
-
-.center-stage {
-  position: absolute;
-  z-index: 2;
-  left: 37%;
-  top: 400px;
-  width: 220px;
-}
-
-.center-stage img {
-    width: 100%;
-}
-
-.original-cameo img{
-  left: 44%;
-  top: 320px;
-  width: 250px;
-}
-
-.flipped-image {
-        -moz-transform: scaleX(-1);
-        -o-transform: scaleX(-1);
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-        filter: FlipH;
-        -ms-filter: "FlipH";
-}
