@@ -1,6 +1,6 @@
 <% if @message.get('outgoing'): %>
-  <%= @message.get('heroine') %>:
+  <span class="message-heroine"><%= @message.get('heroine') %></span>:
 <% else: %>
-  <%= @cameo_name %>:
+  <span class="message-cameo"><%= @cameo_name %></span>:
 <% end %>
-<%= @message.get('content') %>
+<span class="message-content"><%= @message.get('content') %></span>

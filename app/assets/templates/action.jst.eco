@@ -1,9 +1,9 @@
- <h2>Exploring Everfree</h2>
- <h3>Can you find your way out?</h3>
-  <div class="column span-24 theater" id="everfree">
-    
+<h2>Exploring Everfree</h2>
+<h3>Can you find your way out?</h3>
+<div class="column span-24 theater" id="everfree">
+  
 
-    <div class="column span-24" id="background"></div>
+  <div class="column span-24" id="background"></div>
 
-    <div class="span-4 center-stage" id="cameo"></div>
-  </div>
+  <div class="span-4 center-stage" id="cameo"></div>
+</div>
