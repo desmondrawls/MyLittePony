@@ -27,9 +27,6 @@ class Mlp.Routers.Application extends Backbone.Router
         @messages.add content: data.content, heroine: data.heroine, outgoing: data.outgoing
       height = 0
       $('#messages div').each (i, message) ->
-        console.log(message)
-        console.log("scroll to #{this}")
-        console.log("scroll to #{@$}")
         height += parseInt($(this).height())
         console.log("the final height is #{height}")
       $('#messages').animate({scrollTop:height}, 500,'swing');

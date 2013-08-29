@@ -14,9 +14,7 @@ class Mlp.Views.Chat extends Backbone.View
 
   render: ->
     @chat = @collection.filter (x) -> x.get('heroine') == $('#heroine-name').html()
-    console.log("rendering chat..")
     $(@el).html(@template())
-    console.log("the chat is #{@chat}")
     for message in @chat
       @appendMessage(message)
     this

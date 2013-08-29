@@ -9,15 +9,15 @@ class Message < ActiveRecord::Base
     chat = Message.where :heroine => heroine
     if body_array.count < 2 || !Pony.names.include?(heroine)
       Texter.correction(params["From"])
-      message.assign_values("typo", body_array[1], false)
+      message.assign_values("typo", content, false)
       message
     elsif chat.last && chat.last.outgoing
-      message.assign_values(body_array[0], body_array[1], false)
+      message.assign_values(heroine, content, false)
       Texter.update(message)
       message
     else
       Texter.send_better_luck(params["From"])
-      message.assign_values("late", body_array[1], false)
+      message.assign_values("late", content, false)
       message
     end
   end
