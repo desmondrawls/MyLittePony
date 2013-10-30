@@ -1,5 +1,5 @@
 set :application, "mlp"
-set :repository,  "git@github.com:desmondrawls/lostineverfree.git"
+set :repository,  "git@github.com:desmondrawls/MyLittePony.git"
 
 set :user, 'uncledesi'
 set :deploy_to, "/home/#{ user }/#{ application }"
