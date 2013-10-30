@@ -15,8 +15,6 @@ class Mlp.Views.CameoReservation extends Backbone.View
 
   appendCameo: (pony_id, collection) =>
     console.log("appending cameo...")
-    console.log(pony_id)
-    console.log(collection)
     if pony_id
       @cameo = collection.where id: pony_id
       console.log("the cameo i'm appending is #{@cameo[0]}")
