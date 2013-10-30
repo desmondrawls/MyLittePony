@@ -16265,8 +16265,8 @@ if ( typeof module === "object" && module && typeof module.exports === "object" 
       this.clothing_items.reset($('#container').data('clothing_items'));
       this.messages = new Mlp.Collections.Messages();
       this.messages.reset($('#container').data('messages'));
-      faye = new Faye.Client("http://198.211.98.18:9292/faye");
-      faye.setHeader('Access-Control-Allow-Origin', 'http://198.211.98.18');
+      faye = new Faye.Client("http://162.243.70.202:9292/faye");
+      faye.setHeader('Access-Control-Allow-Origin', 'http://162.243.70.202');
       console.log("before: " + this.messages);
       return faye.subscribe("/receive", function(data) {
         var height;
