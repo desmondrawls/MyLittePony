@@ -117,6 +117,7 @@ GEM
     net-ssh (2.6.8)
     net-ssh-gateway (1.2.0)
       net-ssh (>= 2.6.5)
+    newrelic_rpm (3.6.8.168)
     nifty-generators (0.4.6)
     polyglot (0.3.3)
     rack (1.4.5)
@@ -193,6 +194,7 @@ DEPENDENCIES
   figaro
   jquery-rails
   localtunnel
+  newrelic_rpm
   nifty-generators
   rails (= 3.2.13)
   sass-rails (~> 3.2.3)

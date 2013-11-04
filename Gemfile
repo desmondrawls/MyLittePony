@@ -26,6 +26,7 @@ gem 'thin'
 gem 'figaro'
 gem 'localtunnel'
 gem 'twilio-rb'
+gem 'newrelic_rpm'
 
 group :development do
   gem "better_errors"
