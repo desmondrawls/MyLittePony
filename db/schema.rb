@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130825215605) do
+ActiveRecord::Schema.define(:version => 20131105150919) do
 
   create_table "clothing_items", :force => true do |t|
     t.string   "dept"
@@ -66,5 +66,10 @@ ActiveRecord::Schema.define(:version => 20130825215605) do
     t.string   "cameo_width"
     t.boolean  "escape"
   end
+
+  add_index "settings", ["east"], :name => "index_settings_on_east"
+  add_index "settings", ["north"], :name => "index_settings_on_north"
+  add_index "settings", ["south"], :name => "index_settings_on_south"
+  add_index "settings", ["west"], :name => "index_settings_on_west"
 
 end
