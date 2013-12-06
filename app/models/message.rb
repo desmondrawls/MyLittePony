@@ -4,7 +4,7 @@ class Message < ActiveRecord::Base
   def self.create_from_text(params)
     body_array = params["Body"].split(":")
     message = self.new
-    heroine = body_array[0]
+    heroine = body_array[0].split.each(&:capitalize!).join(" ")
     content = body_array[1]
     chat = Message.where :heroine => heroine
     if body_array.count < 2 || !Pony.names.include?(heroine)
