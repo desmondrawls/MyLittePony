@@ -38,4 +38,4 @@ namespace :deploy do
 end
 
 # Load assets here and create symlinks.
-# after 'deploy:update_code','deploy:symlink_config','deploy:assets:precompile'
+after 'deploy:update_code','deploy:symlink_config','deploy:assets:precompile'
