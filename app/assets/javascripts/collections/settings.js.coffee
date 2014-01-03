@@ -30,7 +30,9 @@ class Mlp.Collections.Settings extends Backbone.Collection
     shuffled_collection = @shuffle()
     console.log("SHUFFLED:", shuffled_collection)
     for pony, index in ponies.models
+      console.log("INDEX:", index)
       setting = shuffled_collection[index]
+      console.log("TEST:", shuffled_collection[0])
       setting.set(pony_id: pony.get('id'))
       setting.save()
       console.log("saved #{index}")
