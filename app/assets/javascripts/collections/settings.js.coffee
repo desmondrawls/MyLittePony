@@ -28,6 +28,7 @@ class Mlp.Collections.Settings extends Backbone.Collection
     console.log("assigning cameos...")
     console.log(ponies.models)
     shuffled_collection = @shuffle()
+    console.log("SHUFFLED:", shuffled_collection)
     for pony, index in ponies.models
       setting = shuffled_collection[index]
       setting.set(pony_id: pony.get('id'))
